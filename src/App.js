@@ -4,9 +4,36 @@ import TopContainer from './components/Top-Container';
 import { MiddleContainer }  from './components/Middle-Container';
 import { SkillCards } from './components/Skill-Cards';
 import { elements } from './Elements';
+import { icons } from './Icons';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
+function createSkillCards(element) {
+  return (
+    <SkillCards 
+      key={element.id}
+      a={element.divClass}
+      b={element.image.class}
+      c={element.image.src}
+      d={element.image.altName}
+      skill={element.skillName}
+      description={element.skillDescription}
+    />
+  )
+}
+
+function createIconsCards(icon) {
+  return (
+    <Footer
+          key={icon.id}
+          x1={icon.anchor.class}
+          x2={icon.anchor.href}
+          i1={icon.i.src}
+          i2={icon.i.alt}
+          a={icon.anchorName}
+        />
+  )
+}
 
 function App() {
   return (
@@ -16,67 +43,13 @@ function App() {
 
         <div className="skills">
             <h2>My Skills.</h2>
-            <SkillCards
-              a={elements[0].divClass}
-              b={elements[0].image.class}
-              c={elements[0].image.src}
-              d={elements[0].image.altName}
-              skill={elements[0].skillName}
-              description={elements[0].skillDescription}
-            />
-
-            <SkillCards
-              a={elements[1].divClass}
-              b={elements[1].image.class}
-              c={elements[1].image.src}
-              d={elements[1].image.altName}
-              skill={elements[1].skillName}
-              description={elements[1].skillDescription}
-            />
-
-            <SkillCards
-              a={elements[2].divClass}
-              b={elements[2].image.class}
-              c={elements[2].image.src}
-              d={elements[2].image.altName}
-              skill={elements[2].skillName}
-              description={elements[2].skillDescription}
-            />
-
-            <SkillCards
-              a={elements[3].divClass}
-              b={elements[3].image.class}
-              c={elements[3].image.src}
-              d={elements[3].image.altName}
-              skill={elements[3].skillName}
-              description={elements[3].skillDescription}
-            />
+            {elements.map(createSkillCards)}
             <br/>
             <hr/>    
         </div>
 
         <Contact />
-        <Footer
-          x1={elements[4].anchor.class}
-          x2={elements[4].anchor.href}
-          i1={elements[4].image.src}
-          i2={elements[4].image.alt}
-          a={elements[4].anchorName}
-        />
-        <Footer
-          x1={elements[5].anchor.class}
-          x2={elements[5].anchor.href}
-          i1={elements[5].image.src}
-          i2={elements[5].image.alt}
-          a={elements[5].anchorName}
-        />
-        <Footer
-          x1={elements[6].anchor.class}
-          x2={elements[6].anchor.href}
-          i1={elements[6].image.src}
-          i2={elements[6].image.alt}
-          a={elements[6].anchorName}
-        />
+        {icons.map(createIconsCards)}
         <p className="copyright">Copyright © The Top Of Cliff Developers - All Rights Reserved.</p>
         <p className="copyright">© 2020 - {new Date().getFullYear()} Clinto Ayamkudiyil.</p>
     </div>
