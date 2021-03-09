@@ -45,6 +45,7 @@ export const icons = [
             src : 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
             alt : 'page'
         },
-        anchorName : ' Github'
+        anchorName : ' Github',
+        cssID : 'github'
     }
 ]

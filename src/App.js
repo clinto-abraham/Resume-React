@@ -10,7 +10,7 @@ import { Footer } from './components/Footer';
 
 function createSkillCards(element) {
   return (
-    <SkillCards 
+    <SkillCards
       key={element.id}
       a={element.divClass}
       b={element.image.class}
@@ -31,13 +31,14 @@ function createIconsCards(icon) {
           i1={icon.i.src}
           i2={icon.i.alt}
           a={icon.anchorName}
+          cssID={icon.cssID}
         />
   )
 }
 
 function App() {
   return (
-    <div className="App">   
+    <div className="App">
         <TopContainer />
         <MiddleContainer />
 
@@ -45,7 +46,7 @@ function App() {
             <h2>My Skills.</h2>
             {elements.map(createSkillCards)}
             <br/>
-            <hr/>    
+            <hr/>
         </div>
 
         <Contact />

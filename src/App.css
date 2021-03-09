@@ -13,6 +13,11 @@
 
 }
 
+#github {
+  width: 32px;
+  border-radius: 25px;
+  height: 32px;
+}
 .second-cloud{
   position: absolute;
   bottom: 300px;
