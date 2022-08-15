@@ -7,6 +7,7 @@ import { elements } from './Elements';
 import { icons } from './Icons';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import WebsiteTile from './components/WebsiteTile';
 
 function createSkillCards(element) {
   return (
@@ -48,7 +49,7 @@ function App() {
             <br/>
             <hr/>
         </div>
-
+       <WebsiteTile />
         <Contact />
         {icons.map(createIconsCards)}
         <p className="copyright">Copyright © The Top Of Cliff Developers - All Rights Reserved.</p>
