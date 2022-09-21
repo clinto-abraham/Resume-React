@@ -1,0 +1,131 @@
+#top-shell{
+    background-color: #EAF6F6;
+  }
+  .top-container{
+    margin-top: 0;
+    padding: 100px;
+  }
+  
+  .first-cloud{
+    position: absolute;
+    right: 300px;
+    top: 25px;
+  
+  }
+  
+  #github {
+    width: 32px;
+    border-radius: 25px;
+    height: 32px;
+  }
+  .second-cloud{
+    position: absolute;
+    bottom: 300px;
+    left: 250px;
+  }
+  
+  .mountain{
+    width: 400px;
+    height: 400px;
+  }
+  
+  .profile-pic{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+  
+  }
+  
+  .profile-intro{
+     padding: 50px;
+  }
+  
+  .intro-profile{
+    width: 30%;
+    margin: auto;
+  }
+  .middle-container{
+     padding: 60px 0;
+  }
+  
+  .computer{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+  }
+  
+  .comp-image{
+    width: 310px;
+    height: 320px;
+    border-radius: 10px 100px / 120px;
+    float: right;
+    padding: 30px;
+  }
+  
+  .skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+  }
+  
+  .MyRide{
+     width: 310px;
+     height: 320px;
+     border-radius: 10px 100px / 120px;
+     float: left;
+     padding: 30px;
+  }
+  
+  .skill-food{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+  }
+  
+  .food-GIF{
+    width: 310px;
+    height: 320px;
+    border-radius: 10px 100px / 120px;
+    float: right;
+    padding: 30px;
+  }
+  
+  .self-defence{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+  }
+  
+  .krav-GIF{
+    width: 310px;
+    height: 320px;
+    border-radius: 10px 100px / 120px;
+    float: left;
+    padding: 30px;
+  }
+  
+  .contact-me{
+    width: 60%;
+    text-align: center;
+    margin: 100px auto 60px;
+  }
+  
+  .contact-message{
+    margin: 40px auto 60px;
+    width: 50%;
+  }
+  
+  hr{
+    width: 6%;
+    border: dotted #a4b787 6px;
+    border-bottom: none;
+    margin: 60px auto;
+  }
+  
+  a:hover{
+    color: #e8e8e8;
+  }

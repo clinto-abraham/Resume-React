@@ -6,7 +6,7 @@ import { MySkills } from './components/Skills';
 import { MiddleContainer } from './components/Middle-Container';
 import { Contact } from './components/Contact';
 import { FootBar } from './components/Footer/IconsCards';
-import './Styles/App.css';
+import './Styles/sass/main.scss';
 
 function App() {
   return (
