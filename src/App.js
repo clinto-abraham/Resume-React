@@ -1,58 +1,21 @@
 import React from 'react';
-import './App.css';
 import TopContainer from './components/Top-Container';
-import { MiddleContainer }  from './components/Middle-Container';
-import { SkillCards } from './components/Skill-Cards';
-import { elements } from './Elements';
-import { icons } from './Icons';
+import { CreateSkillCards } from './components/Skills/CreateSkillCards';
+import { CreateIconsCards } from './components/Footer/CreateIconsCards';
+import { MySkills } from './components/Skills';
+import { MiddleContainer } from './components/Middle-Container';
 import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
-
-function createSkillCards(element) {
-  return (
-    <SkillCards
-      key={element.id}
-      a={element.divClass}
-      b={element.image.class}
-      c={element.image.src}
-      d={element.image.altName}
-      skill={element.skillName}
-      description={element.skillDescription}
-    />
-  )
-}
-
-function createIconsCards(icon) {
-  return (
-    <Footer
-          key={icon.id}
-          x1={icon.anchor.class}
-          x2={icon.anchor.href}
-          i1={icon.i.src}
-          i2={icon.i.alt}
-          a={icon.anchorName}
-          cssID={icon.cssID}
-        />
-  )
-}
+import { FootBar } from './components/Footer/IconsCards';
+import './Styles/App.css';
 
 function App() {
   return (
     <div className="App">
-        <TopContainer />
-        <MiddleContainer />
-
-        <div className="skills">
-            <h2>My Skills.</h2>
-            {elements.map(createSkillCards)}
-            <br/>
-            <hr/>
-        </div>
-
-        <Contact />
-        {icons.map(createIconsCards)}
-        <p className="copyright">Copyright © The Top Of Cliff Developers - All Rights Reserved.</p>
-        <p className="copyright">© 2020 - {new Date().getFullYear()} Clinto Ayamkudiyil.</p>
+      <TopContainer />
+      <MiddleContainer />
+      <MySkills CreateSkillCards={CreateSkillCards} />
+      <Contact />
+      <FootBar CreateIconsCards={CreateIconsCards} />
     </div>
   );
 }
