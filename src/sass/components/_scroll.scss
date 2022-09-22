@@ -1,0 +1,13 @@
+.scroll{
+    position: sticky;
+    bottom: 3rem;
+    left: 20rem;
+	float: right;
+	background-color: transparent;
+	overflow-y: scroll;
+	margin: 25px;
+    .icon{
+        width:2rem;
+        height:3rem;
+    }
+}

@@ -1,22 +1,25 @@
 import React from 'react';
-import TopContainer from './components/Top-Container';
-import { CreateSkillCards } from './components/Skills/CreateSkillCards';
-import { CreateIconsCards } from './components/Footer/CreateIconsCards';
-import { MySkills } from './components/Skills';
-import { MiddleContainer } from './components/Middle-Container';
-import { Contact } from './components/Contact';
-import { FootBar } from './components/Footer/IconsCards';
-import './Styles/sass/main.scss';
+import { Routes, Route } from "react-router-dom";
+import TopNavbar from "./Components/TopNavbar";
+import { Home } from './Pages/Home';
+import HireMe from './Pages/HireMe';
+import WebsiteRequirement from './Pages/WebsiteRequirement';
+
+import './sass/main.scss';
+import Scrollbar from './Components/Scrollbar';
 
 function App() {
   return (
-    <div className="App">
-      <TopContainer />
-      <MiddleContainer />
-      <MySkills CreateSkillCards={CreateSkillCards} />
-      <Contact />
-      <FootBar CreateIconsCards={CreateIconsCards} />
-    </div>
+    <>
+      <TopNavbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/hire-me" element={<HireMe />} />
+        <Route path="/website-requirement" element={<WebsiteRequirement />} />
+      </Routes>
+      <Scrollbar />
+    </>
+
   );
 }
 

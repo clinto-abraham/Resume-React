@@ -1,0 +1,23 @@
+#top-navbar {
+    background-image: url(../../Assets/cave.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // opacity: 0.5;
+    padding: 2rem;
+    height: 40rem;
+
+    .logo {
+        shape-outside: circle(100%);
+        clip-path: circle(4.5rem at 7.7rem 4.7rem);
+        background-repeat: no-repeat;
+        background-color: #fff;
+        height: 12rem;
+    }
+
+    .text {
+        padding: 15rem;
+        color: #fff;
+        font-family: 'Sacramento', cursive;
+        font-size: 12rem;
+    }
+}
