@@ -106,14 +106,14 @@ const NavigationButtonBar = () => {
             if(e.target.innerText==='ABOUT ME'){
               await navigate(image.URL_ROUTE)
                window.scroll({
-                top: 1800,
+                top: 1380,
                 left: 0,
                 behavior: 'smooth'
               });
             } else {
               await navigate(image.URL_ROUTE)
                window.scroll({
-                top: 710,
+                top: 800,
                 left: 0,
                 behavior: 'smooth'
               });

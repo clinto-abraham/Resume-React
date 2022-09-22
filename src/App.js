@@ -7,6 +7,7 @@ import WebsiteRequirement from './Pages/WebsiteRequirement';
 
 import './sass/main.scss';
 import Scrollbar from './Components/Scrollbar';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/website-requirement" element={<WebsiteRequirement />} />
       </Routes>
       <Scrollbar />
+      <Footer />
     </>
 
   );

@@ -1,9 +1,8 @@
 import NavigationButtonBar from "./Fragments/index";
 import React from "react";
-import { Grid, Button, Avatar, Typography } from "@mui/material";
+import { Grid, Button, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-const path = require("path");
-console.log(path.dirname("src/Assets/High-Logo.png") + "/High-Logo.png");
+
 const TopNavbar = () => {
   const navigate = useNavigate();
   return (
