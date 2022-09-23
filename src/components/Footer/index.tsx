@@ -16,7 +16,7 @@ export default function Footer() {
             width: "100%",
             backgroundColor: "black",
             color: "white",
-            height: "4rem",
+            height: "2.2rem",
             padding: "1rem",
           }}
         >
