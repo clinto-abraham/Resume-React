@@ -4,8 +4,8 @@ import TopNavbar from "./Components/Top_Navbar/index.jsx";
 import { Home } from './Pages/Home';
 import HireMe from './Pages/HireMe';
 import WebsiteRequirement from './Pages/WebsiteRequirement';
-import Scrollbar from './Components/Scroll_bar';
-import Footer from './Components/Footer';
+import Scrollbar from './Components/Scroll_bar/index';
+import Footer from './Components/Footer/index';
 import Project from './Pages/Project';
 import './sass/main.scss';
 
