@@ -4,10 +4,10 @@ import TopNavbar from "./Components/TopNavbar";
 import { Home } from './Pages/Home';
 import HireMe from './Pages/HireMe';
 import WebsiteRequirement from './Pages/WebsiteRequirement';
-
-import './sass/main.scss';
 import Scrollbar from './Components/Scrollbar';
 import Footer from './Components/Footer';
+import Project from './Pages/Project';
+import './sass/main.scss';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/hire-me" element={<HireMe />} />
         <Route path="/website-requirement" element={<WebsiteRequirement />} />
+        <Route path="/projects" element={<Project />} />
       </Routes>
       <Scrollbar />
       <Footer />
