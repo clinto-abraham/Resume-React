@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import TopNavbar from "./Components/Top_Navbar/index.jsx";
+import TopNavbar from "./Components/Top_Navbar/index";
 import { Home } from './Pages/Home';
 import HireMe from './Pages/HireMe';
 import WebsiteRequirement from './Pages/WebsiteRequirement';
