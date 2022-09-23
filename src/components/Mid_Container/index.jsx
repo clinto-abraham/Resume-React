@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MiddleContainer = () => (
+export const Mid_Container = () => (
   <div>
     <div className="middle-container">
       <div className="profile">
