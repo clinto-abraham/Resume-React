@@ -1,0 +1,9 @@
+[build]
+  base    = ""
+  publish = "/build"
+  command = "npm run build --type=UMD_DEV && cd / && npm && npm run start && npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
