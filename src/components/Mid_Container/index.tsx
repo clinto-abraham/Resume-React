@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Mid_Container = () => (
+ const MiddleContainer = () => (
   <div>
     <div className="middle-container">
       <div className="profile">
@@ -27,3 +27,4 @@ export const Mid_Container = () => (
     <hr />
   </div>
 );
+export default MiddleContainer
