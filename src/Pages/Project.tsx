@@ -1,5 +1,5 @@
 import React from 'react'
-import WebsiteTile from '../Components/WebsiteTile'
+import WebsiteTile from '../Components/Website_Tile'
 
 const Project = () => {
   return (
