@@ -3,7 +3,7 @@ import { RouterProvider, createBrowserRouter } from './Utils/exports'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux';
 import { SnackbarProvider } from 'notistack';
-import { store } from './redux/store';
+import { store } from './Redux/store';
 import './Styles/index.css'
 import App from './App';
 import ErrorPage from './Pages/NotFound';
