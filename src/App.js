@@ -14,6 +14,7 @@ import WordOfGod from './components/QuotesWordOfGod';
 import { SnackbarProvider } from 'notistack';
 import { store } from './redux/store';
 import './Styles/App.css';
+import WebsiteTile from './components/WebsiteTile';
 
 
 function App() {
@@ -23,14 +24,14 @@ function App() {
       <QueryClientProvider client={queryClient}>
       <Provider store={store}>
       <SnackbarProvider maxSnack={3}>
-      
       <TopContainer />
       <MiddleContainer />
+      {/* <NavigateMe /> */}
+      <WebsiteTile />
       <MySkills CreateSkillCards={CreateSkillCards} />
       <Contact />
       <WordOfGod color='white' size='2rem 1rem' />
       <FooterNavbar />
-
       </SnackbarProvider>
       </Provider>
     </QueryClientProvider>
@@ -59,7 +60,7 @@ export default App;
 //         <SnackbarProvider maxSnack={3}>
 //           <TopNavbar />
 //           <WordOfGod color='white' size='2rem 1rem' />
-//           <NavigateMe />
+
 //           <Component {...pageProps} />
 //           <FooterNavbar />
 //         </SnackbarProvider>
