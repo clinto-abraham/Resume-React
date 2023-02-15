@@ -1,9 +1,11 @@
+import './Styles/App.css'
 import TopContainer from './components/TopContainer'
 import { MiddleContainer } from './components/MidContainer'
 import { Contact } from './components/Contact'
 import { CreateSkillCards, MySkills } from './components/Skills'
 import WordOfGod from './components/QuotesWordOfGod'
-import './Styles/App.css'// import { Typography, useState } from './Utils/exports'
+import FooterNavbar from './components/Footer'
+// import { Typography, useState } from './Utils/exports'
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
       <MySkills CreateSkillCards={CreateSkillCards} />
       <Contact />
       <WordOfGod color='black' size='2rem 1rem' />
+      <FooterNavbar />
       {/* <TopContainer />
       <MiddleContainer /> */}
       {/* <NavigateMe /> */}
