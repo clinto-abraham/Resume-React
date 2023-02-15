@@ -1,6 +1,5 @@
-import React from "react";
 
-const TopContainer = () => {
+function TopContainer() {
     return (
         <div id="top-shell">
             <span className="top-container">
