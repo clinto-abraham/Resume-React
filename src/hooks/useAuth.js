@@ -1,6 +1,6 @@
 import { useState, useEffect } from '../Utils/exports'
 import { onAuthStateChanged } from "firebase/auth";
-import { auth, signInWithGooglePopup } from "../Utils/firebase";
+import { auth, signInWithGooglePopup } from "../Utils/Firebase";
 
 export function useAuth() {
     const [currentUser, setCurrentUser] = useState();
