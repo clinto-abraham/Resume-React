@@ -1,7 +1,10 @@
+import { Outlet } from "../../Utils/exports"
 
 const About = () => {
     return (
-        <div>About</div>
+        <h1>About
+            <Outlet />
+        </h1>
     )
 }
 
