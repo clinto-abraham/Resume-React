@@ -6,6 +6,7 @@ import { CreateSkillCards, MySkills } from './components/Skills'
 import WordOfGod from './components/QuotesWordOfGod'
 import FooterNavbar from './components/Footer'
 import SignIn from './components/SignInGoogle'
+// import Portfolio from './components/Portfolio'    <Portfolio />
 // import { Typography, useState } from './Utils/exports'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <TopContainer />
       <SignIn />
+
       <MiddleContainer />
       <MySkills CreateSkillCards={CreateSkillCards} />
       <Contact />
