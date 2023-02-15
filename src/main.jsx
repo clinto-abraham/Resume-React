@@ -16,19 +16,22 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/privacy-&-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms-of-service",
+        element: <TermsConditions />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+    ],
   },
-  {
-    path: "/privacy-&-policy",
-    element: <PrivacyPolicy />,
-  },
-  {
-    path: "/terms-of-service",
-    element: <TermsConditions />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
+
 ]);
 
 
