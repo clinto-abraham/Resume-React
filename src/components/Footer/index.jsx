@@ -1,4 +1,4 @@
-import { registerSelected } from '../../redux/footerSlice';
+import { registerSelected } from '../../Redux/footerSlice';
 import {
     Link, useNavigate,
     useDispatch, useSelector,
