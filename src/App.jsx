@@ -1,8 +1,8 @@
-import TopContainer from './Components/TopContainer'
-import { MiddleContainer } from './Components/MidContainer'
-import { Contact } from './Components/Contact'
-import { CreateSkillCards, MySkills } from './Components/Skills'
-import WordOfGod from './Components/QuotesWordOfGod'
+import TopContainer from './components/TopContainer'
+import { MiddleContainer } from './components/MidContainer'
+import { Contact } from './components/Contact'
+import { CreateSkillCards, MySkills } from './components/Skills'
+import WordOfGod from './components/QuotesWordOfGod'
 import './Styles/App.css'// import { Typography, useState } from './Utils/exports'
 
 function App() {
