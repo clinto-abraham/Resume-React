@@ -1,6 +1,6 @@
 import { registerVerse } from '../../Redux/footerSlice';
 import { Button, FormatQuoteIcon, Grid, ReplayIcon, Typography, useDispatch, useEffect, useSelector } from '../../Utils/exports';
-import { Jesus } from '../../Utils/wordOfGod';
+import { Jesus } from '../../Utils/WordOfGod';
 const chooseVerse = () => Math.ceil(Math.random() * 10)
 
 const WordOfGod = ({ color, size }) => {
