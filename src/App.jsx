@@ -15,20 +15,14 @@ function App() {
     <div className="App">
       <TopContainer />
       <SignIn />
-
       <MiddleContainer />
       <MySkills CreateSkillCards={CreateSkillCards} />
       <Contact />
       <WordOfGod color='black' size='2rem 1rem' />
       <FooterNavbar />
-      {/* <TopContainer />
-      <MiddleContainer /> */}
       {/* <NavigateMe /> */}
       {/* <WebsiteTile /> */}
-      {/* <MySkills CreateSkillCards={CreateSkillCards} /> */}
-      {/* <Contact /> */}
-      {/* <WordOfGod color='white' size='2rem 1rem' /> */}
-      {/* <FooterNavbar /> */}
+
     </div>
   )
 }
@@ -41,32 +35,8 @@ export default App
 //   QueryClientProvider
 // } from '@tanstack/react-query'
 
-// import FooterNavbar from './components/Footer'
 
 
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import './App.css'
-
-
-// function App() {
-//   const [queryClient] = useState(() => new QueryClient())
-
-//   return (
-//     <QueryClientProvider client={queryClient}>
-//       <TopContainer />
-//       <MiddleContainer />
-//       {/* <NavigateMe /> */}
-//       {/* <WebsiteTile /> */}
-//       <MySkills CreateSkillCards={CreateSkillCards} />
-//       <Contact />
-//       <WordOfGod color='white' size='2rem 1rem' />
-//       <FooterNavbar />
-//     </QueryClientProvider>
-//   )
-// }
-
-// export default App
 
 
 
