@@ -1,16 +1,41 @@
-import { Typography, useState } from './Utils/exports'
-import {
-  QueryClient,
-  QueryClientProvider
-} from '@tanstack/react-query'
+import TopContainer from './Components/TopContainer'
+import { MiddleContainer } from './Components/MidContainer'
+import { Contact } from './Components/Contact'
+import { CreateSkillCards, MySkills } from './Components/Skills'
+import WordOfGod from './Components/QuotesWordOfGod'
+import './Styles/App.css'// import { Typography, useState } from './Utils/exports'
 
-import TopContainer from './components/TopContainer'
-import { MiddleContainer } from './components/MidContainer'
-import { Contact } from './components/Contact'
-import { CreateSkillCards, MySkills } from './components/Skills'
-import WordOfGod from './components/QuotesWordOfGod'
-import FooterNavbar from './components/Footer'
-import './Styles/App.css'
+function App() {
+
+  return (
+    <div className="App">
+      <TopContainer />
+      <MiddleContainer />
+      <MySkills CreateSkillCards={CreateSkillCards} />
+      <Contact />
+      <WordOfGod color='black' size='2rem 1rem' />
+      {/* <TopContainer />
+      <MiddleContainer /> */}
+      {/* <NavigateMe /> */}
+      {/* <WebsiteTile /> */}
+      {/* <MySkills CreateSkillCards={CreateSkillCards} /> */}
+      {/* <Contact /> */}
+      {/* <WordOfGod color='white' size='2rem 1rem' /> */}
+      {/* <FooterNavbar /> */}
+    </div>
+  )
+}
+
+export default App
+
+
+// import {
+//   QueryClient,
+//   QueryClientProvider
+// } from '@tanstack/react-query'
+
+// import FooterNavbar from './components/Footer'
+
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
@@ -42,26 +67,5 @@ import './Styles/App.css'
 
 
 
-function App() {
 
-  return (
-    <div className="App">
-      <TopContainer />
-      <MiddleContainer />
-      <MySkills CreateSkillCards={CreateSkillCards} />
-      <Contact />
-      <WordOfGod color='black' size='2rem 1rem' />
-      {/* <TopContainer />
-      <MiddleContainer /> */}
-      {/* <NavigateMe /> */}
-      {/* <WebsiteTile /> */}
-      {/* <MySkills CreateSkillCards={CreateSkillCards} /> */}
-      {/* <Contact /> */}
-      {/* <WordOfGod color='white' size='2rem 1rem' /> */}
-      {/* <FooterNavbar /> */}
-    </div>
-  )
-}
-
-export default App
 
