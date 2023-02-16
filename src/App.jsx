@@ -1,29 +1,35 @@
 import './Styles/App.css'
 import TopContainer from './components/TopContainer'
-import { MiddleContainer } from './components/MidContainer'
-import { Contact } from './components/Contact'
-import { CreateSkillCards, MySkills } from './components/Skills'
+// import { MiddleContainer } from './components/Introduction'
+// import { Contact } from './components/Contact'
+// import { CreateSkillCards, MySkills } from './components/Skills'
 import WordOfGod from './components/QuotesWordOfGod'
 import FooterNavbar from './components/Footer'
-import SignIn from './components/SignInGoogle'
+// import SignIn from './components/SignInGoogle'
+import TopNavbar from './components/Navbar'
+import TabSwitchBar from './components/Tabs'
 // import Portfolio from './components/Portfolio'    <Portfolio />
 // import { Typography, useState } from './Utils/exports'
+
 
 function App() {
 
   return (
-    <div className="App">
-      <TopContainer />
-      <SignIn />
-      <MiddleContainer />
-      <MySkills CreateSkillCards={CreateSkillCards} />
-      <Contact />
-      <WordOfGod color='black' size='2rem 1rem' />
-      <FooterNavbar />
-      {/* <NavigateMe /> */}
-      {/* <WebsiteTile /> */}
+    <>
+      <TopNavbar />
 
-    </div>
+      <div className="App">
+
+        <TopContainer />
+        <TabSwitchBar />
+        {/* <WebsiteTile /> */}
+        <WordOfGod color='black' size='2rem 1rem' />
+        <FooterNavbar />
+        {/* <NavigateMe /> */}
+
+
+      </div>
+    </>
   )
 }
 
