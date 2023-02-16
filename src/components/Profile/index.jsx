@@ -14,7 +14,7 @@ import { useAuth } from '../../hooks/useAuth';
 import {
     signInWithGooglePopup,
     // signInWithGoogleRedirect 
-} from '../../Utils/firebase';
+} from '../../Utils/Firebase';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
