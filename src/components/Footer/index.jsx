@@ -1,7 +1,7 @@
 import { registerSelected } from '../../Redux/footerSlice';
 import {
     // Link, useNavigate,
-    useDispatch, useSelector,
+    useSelector,
     Box, BottomNavigation, BottomNavigationAction, Grid, Typography, Button,
     FavoriteIcon, RestoreIcon, LocationOnIcon, GitHubIcon, LinkedInIcon, TwitterIcon, LightbulbIcon, GavelIcon, PolicyIcon, StarsIcon, AccountTreeIcon, LayersIcon, ThumbUpIcon, CommentIcon, HomeIcon,
 } from '../../Utils/exports'

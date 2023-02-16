@@ -1,5 +1,3 @@
-
-
 export const Contact = () => (
     <div className="contact-me">
         <h2>Get In Touch</h2>

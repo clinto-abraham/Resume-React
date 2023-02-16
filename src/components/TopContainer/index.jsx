@@ -1,6 +1,5 @@
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import { Typography } from '@mui/material';
-import reactLogo from '../../assets/react.svg'
 
 const TopContainer = () => {
     return (
@@ -13,7 +12,7 @@ const TopContainer = () => {
                     REACT.js || NEXT.JS || EXPRESS.JS || NODE.JS || SALESFORCE ADMININSTRATOR
                 </Typography>
                 <a href="https://reactjs.org" target="_blank">
-                    <img src={reactLogo} className="logo react" alt="React logo" />
+                    <img src='../Images/react.svg' className="logo react" alt="React logo" />
                 </a>
                 <img className="second-cloud" src="../Images/cloud.png" alt="clouds" />
                 <img className="mountain" src="../Images/mountain.png" alt="mountain" />
