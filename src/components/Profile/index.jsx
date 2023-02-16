@@ -7,8 +7,8 @@ import {
     styled,
     red,
 } from '../../Utils/exports'
-import { registerUser } from '../../redux/loginSlice';
-import { initialLocalState } from '../../Utils/userInitialData';
+import { registerUser } from '../../Redux/loginSlice';
+import { initialLocalState } from '../../Utils/UserInitialData';
 import WordOfGod from '../QuotesWordOfGod';
 import { useAuth } from '../../hooks/useAuth';
 import {
