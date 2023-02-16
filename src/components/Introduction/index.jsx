@@ -1,5 +1,5 @@
 
-export const MiddleContainer = () => (
+export const Introduction = () => (
     <div>
         <div className="middle-container">
             <div className="profile">
