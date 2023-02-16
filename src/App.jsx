@@ -1,33 +1,22 @@
 import './Styles/App.css'
 import TopContainer from './components/TopContainer'
-// import { MiddleContainer } from './components/Introduction'
-// import { Contact } from './components/Contact'
-// import { CreateSkillCards, MySkills } from './components/Skills'
 import WordOfGod from './components/QuotesWordOfGod'
 import FooterNavbar from './components/Footer'
-// import SignIn from './components/SignInGoogle'
 import TopNavbar from './components/Navbar'
 import TabSwitchBar from './components/Tabs'
-// import Portfolio from './components/Portfolio'    <Portfolio />
-// import { Typography, useState } from './Utils/exports'
-
 
 function App() {
 
   return (
     <>
       <TopNavbar />
-
       <div className="App">
-
         <TopContainer />
         <TabSwitchBar />
         {/* <WebsiteTile /> */}
         <WordOfGod color='black' size='2rem 1rem' />
         <FooterNavbar />
         {/* <NavigateMe /> */}
-
-
       </div>
     </>
   )
