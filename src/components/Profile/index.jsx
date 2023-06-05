@@ -6,10 +6,10 @@ import {
     PhoneAndroidIcon, AttachEmailIcon, MailLockIcon, ExpandMoreIcon, MoreVertIcon,
     styled,
     red,
-} from '../../Utils/exports'
-import { registerUser } from '../../Redux/loginSlice';
-import { initialLocalState } from '../../Utils/UserInitialData';
-import WordOfGod from '../QuotesWordOfGod';
+} from '../../utils/exports'
+import { registerUser } from '../../redux/loginSlice';
+import { initialLocalState } from '../../utils/UserInitialData';
+import WordOfGod from '../WordOfGod';
 import { useAuth } from '../../hooks/useAuth';
 import {
     signInWithGooglePopup,

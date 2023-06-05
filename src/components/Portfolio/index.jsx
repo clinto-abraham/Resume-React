@@ -1,9 +1,9 @@
 import {
-    Paper,
-    useDispatch, useSelector,
-    Box, BottomNavigation, BottomNavigationAction, Grid, Typography, Button,
-    FavoriteIcon, RestoreIcon, LocationOnIcon, GitHubIcon, LinkedInIcon, TwitterIcon, LightbulbIcon, GavelIcon, PolicyIcon, StarsIcon, AccountTreeIcon, LayersIcon, ThumbUpIcon, CommentIcon, HomeIcon,
-} from '../../Utils/exports'
+    useDispatch,
+    // Box, BottomNavigation, BottomNavigationAction, Grid, Typography,
+    Button,
+    // FavoriteIcon, RestoreIcon, LocationOnIcon, GitHubIcon, LinkedInIcon, TwitterIcon, LightbulbIcon, GavelIcon, PolicyIcon, StarsIcon, AccountTreeIcon, LayersIcon, ThumbUpIcon, CommentIcon, HomeIcon,
+} from '../../utils/exports'
 import Tooltip from '@mui/material/Tooltip';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -13,14 +13,14 @@ import Avatar from '@mui/material/Avatar';
 import ImageIcon from '@mui/icons-material/Image';
 import WorkIcon from '@mui/icons-material/Work';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
-import { registerModalToggle } from '../../Redux/portfolioSlice';
+import { registerModalToggle } from '../../redux/portfolioSlice';
 import ModalPortfolio from './modalPortfolio';
 
 export default function Portfolio() {
     const dispatch = useDispatch()
     const handleModal = (e) => {
         dispatch(registerModalToggle(true))
-        console.log('clicked')
+        console.log('clicked', e, 'e')
     }
     return (
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>

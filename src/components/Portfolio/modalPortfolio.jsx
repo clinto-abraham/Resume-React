@@ -1,12 +1,17 @@
 import {
-  Link,
-  useState,
+  // Link,
+  // useState,
   useSelector,
-  styled, Card, CardHeader, CardMedia, CardContent, CardActions, Collapse, IconButton, Typography, Grid, Button,
-  FavoriteIcon, ShareIcon, ExpandMoreIcon, MoreVertIcon, Box,
+  // styled, CardHeader,
+  Card, CardMedia, CardContent, CardActions,
+  // Collapse, IconButton, Grid,
+  Typography, Button,
+  ShareIcon,
+  // FavoriteIcon, ExpandMoreIcon, MoreVertIcon,
+  Box,
   WhatsappShareButton,
   useDispatch,
-} from '../../Utils/exports'
+} from '../../utils/exports'
 // import Box from '@mui/material/Box';
 // import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
@@ -23,7 +28,7 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 400,
-  width: 700,
+  height: 700,
   bgcolor: 'background.paper',
   // border: '2px solid #000',
   boxShadow: 24,
