@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+AyerPoster-Medium.ttf
+AyerPoster-Medium.woff
+AyerPoster-Medium.woff2
+banana-v1-transformed.glb
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

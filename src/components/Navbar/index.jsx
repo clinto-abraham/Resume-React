@@ -8,7 +8,7 @@ const Navbar = () => {
         const nav = document.querySelector('.nav')
         const position = window.pageYOffset;
         setScrollPosition(position);
-        if (window.scrollY > nav.offsetHeight + 10) {
+        if (window.scrollY > nav.offsetHeight - 10) {
             nav.classList.add('active')
         } else {
             nav.classList.remove('active')
