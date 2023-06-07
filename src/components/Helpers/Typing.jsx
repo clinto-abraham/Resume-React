@@ -1,4 +1,4 @@
-import { PropTypes } from "../../utils/exports";
+import { PropTypes } from "../../utils/commons";
 
 export default function Typing({ content }) {
   return (

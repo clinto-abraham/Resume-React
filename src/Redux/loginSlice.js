@@ -1,4 +1,4 @@
-import { createSlice } from "../utils/exports";
+import { createSlice } from "../utils/commons";
 
 const initialState = {
   user: {
