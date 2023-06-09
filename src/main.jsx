@@ -5,12 +5,15 @@ import "./styles/main.scss";
 import { Provider } from "react-redux";
 // import { SnackbarProvider } from 'notistack';
 import { store } from "./redux/store";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
       {/* <SnackbarProvider maxSnack={3}> */}
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
       {/* </SnackbarProvider> */}
     </Provider>
   </React.StrictMode>
