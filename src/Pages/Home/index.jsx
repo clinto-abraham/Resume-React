@@ -1,3 +1,53 @@
+import SideNavigation from "./SideNavigation";
+
+import ExtraGrid from "./ExtraGrid";
+import ServiceFooter from "./ServiceFooter";
+import ServiceConnect from "./ServiceConnect";
+import ServiceTestimony from "./ServiceTestimony";
+import ServiceSubscriptions from "./ServiceSubscriptions";
+import ServiceFeatures from "./ServiceFeatures";
+import AboutService from "./AboutService";
+import IntroHeader from "./IntroHeader";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+// import { Link } from "react-router-dom";
+
+const Home = () => {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/gallery") {
+      window.scrollTo({
+        top: 2040,
+        behavior: "smooth",
+      });
+    }
+  }, []);
+
+  console.log(
+    location.pathname,
+    window,
+    window.scrollTo,
+    document.documentElement.scrollHeight,
+    document.documentElement.clientHeight
+  );
+  return (
+    <div>
+      {location.pathname}
+      <IntroHeader />
+      <SideNavigation />
+      <main>
+        <AboutService />
+        <ServiceFeatures />
+        <ServiceSubscriptions />
+        <ServiceTestimony />
+        <ServiceConnect />
+      </main>
+      <ExtraGrid />
+      <ServiceFooter />
+    </div>
+  );
+};
+
 // import React from "react";
 // import { useDispatch, useSelector } from "react-redux";
 // import {
@@ -8,31 +58,31 @@
 // } from "react-router-dom";
 // import { registerModalToggle } from "../../redux/subscribeSlice";
 // import EmailSubscription from "../EmailSubscription";
-import Portfolio from "./portfolio";
+// import { Link } from "../../utils/commons";
 
-function Home() {
-  // let navigation = useNavigation();
-  // const dispatch = useDispatch();
-  // const { showModal } = useSelector((state) => state.subscribe);
-  // const handleSubscribe = () => {
-  //   dispatch(registerModalToggle(true));
-  // };
+// function Home() {
+//   // let navigation = useNavigation();
+//   // const dispatch = useDispatch();
+//   // const { showModal } = useSelector((state) => state.subscribe);
+//   // const handleSubscribe = () => {
+//   //   dispatch(registerModalToggle(true));
+//   // };
 
-  // let getKey = React.useCallback((location, matches) => {
-  //   let match = matches.find((m) => m.handle?.scrollMode);
-  //   if (match?.handle?.scrollMode === "pathname") {
-  //     return location.pathname;
-  //   }
+//   // let getKey = React.useCallback((location, matches) => {
+//   //   let match = matches.find((m) => m.handle?.scrollMode);
+//   //   if (match?.handle?.scrollMode === "pathname") {
+//   //     return location.pathname;
+//   //   }
 
-  //   return location.key;
-  // }, []);
+//   //   return location.key;
+//   // }, []);
 
-  return (
-    <>
-      <Portfolio />
-    </>
-  );
-}
+//   return (
+//     <>
+//       <Portfolio />
+//     </>
+//   );
+// }
 
 export const Introduction = () => {
   return (

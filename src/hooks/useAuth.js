@@ -1,11 +1,13 @@
-import { useState, useEffect } from "../utils/commons";
+import { useState, useEffect, useContext } from "../utils/commons";
 import { onAuthStateChanged } from "firebase/auth";
 import {
   auth,
   // signInWithGooglePopup
 } from "../utils/Firebase";
+import { AuthContext } from "../context/AuthContext";
+// import AuthContext from "../context/AuthContext";
 
-export function useAuth() {
+function useAuth2() {
   const [currentUser, setCurrentUser] = useState();
 
   useEffect(() => {
@@ -17,4 +19,8 @@ export function useAuth() {
   }, []);
 
   return currentUser;
+}
+
+export default function useAuth() {
+  return useContext(AuthContext);
 }
