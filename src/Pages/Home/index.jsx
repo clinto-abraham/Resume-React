@@ -1,16 +1,11 @@
-import SideNavigation from "./SideNavigation";
-
-import ExtraGrid from "./ExtraGrid";
-import ServiceFooter from "./ServiceFooter";
+// import ExtraGrid from "./ExtraGrid";
 import ServiceConnect from "./ServiceConnect";
 import ServiceTestimony from "./ServiceTestimony";
 import ServiceSubscriptions from "./ServiceSubscriptions";
 import ServiceFeatures from "./ServiceFeatures";
 import AboutService from "./AboutService";
-import IntroHeader from "./IntroHeader";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-// import { Link } from "react-router-dom";
 
 const Home = () => {
   const location = useLocation();
@@ -23,28 +18,14 @@ const Home = () => {
     }
   }, []);
 
-  console.log(
-    location.pathname,
-    window,
-    window.scrollTo,
-    document.documentElement.scrollHeight,
-    document.documentElement.clientHeight
-  );
   return (
-    <div>
-      {location.pathname}
-      <IntroHeader />
-      <SideNavigation />
-      <main>
-        <AboutService />
-        <ServiceFeatures />
-        <ServiceSubscriptions />
-        <ServiceTestimony />
-        <ServiceConnect />
-      </main>
-      <ExtraGrid />
-      <ServiceFooter />
-    </div>
+    <main>
+      <AboutService />
+      <ServiceFeatures />
+      <ServiceSubscriptions />
+      <ServiceTestimony />
+      <ServiceConnect />
+    </main>
   );
 };
 

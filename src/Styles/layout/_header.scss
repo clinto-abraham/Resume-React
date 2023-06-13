@@ -1,3 +1,25 @@
+#header {
+  background-color: #f1f1f1;
+  padding: 50px 10px;
+  color: rgb(150, 26, 26);
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  font-size: 90px;
+  #header-30 {
+    font-size: 30px;
+    transition: 3.9s;
+    z-index: 7000;
+  }
+  #header-90 {
+    font-size: 90px;
+    transition: 2.9s;
+  }
+}
+
 .header {
   height: 85vh;
   background-image: linear-gradient(

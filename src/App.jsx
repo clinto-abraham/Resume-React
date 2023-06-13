@@ -1,28 +1,41 @@
-import { Routes, Route, Outlet, useLocation } from "./utils/commons";
+import { Routes, Route, useLocation, useSelector } from "./utils/commons";
 
 import "@reach/dialog/styles.css";
 import Modal from "./components/Modal";
 import RequireAuth from "./components/Authentication/RequireAuth";
-import NoMatch from "./pages/404/NoMatch";
+
 import Home from "./pages/Home";
 import SideModal from "./pages/Home/SideModal";
-import Gallery from "./components/Gallery";
-import ImageView from "./components/ImageView";
-import LoginPage from "./components/Authentication/LoginPage";
+// import Gallery from "./components/Gallery";
+// import ImageView from "./components/ImageView";
+// import LoginPage from "./components/Authentication/LoginPage";
+// import SideNavigationBar from "./pages/Home/SideNavigationBar";
+// import IntroHeader from "./pages/Home/IntroHeader";
+// import ServiceFooter from "./pages/Home/ServiceFooter";
+// import NoMatch from "./pages/404/NoMatch";
 import AuthStatus from "./components/Authentication/AuthStatus";
-import SideNavigation from "./pages/Home/SideNavigation";
-import IntroHeader from "./pages/Home/IntroHeader";
-import ServiceFooter from "./pages/Home/ServiceFooter";
 import Navbar from "./components/Navbar";
+import DarkMode from "./components/DarkMode";
+
+import Stacks from "./pages/Stacks";
+import SideNavigationBar from "./pages/Home/SideNavigationBar";
+import ServiceFooter from "./pages/Home/ServiceFooter";
+import IntroHeader from "./pages/Home/IntroHeader";
 
 export default function App() {
   let location = useLocation();
   let state = location.state;
+  const { darkMode } = useSelector((state) => state.navbar);
   return (
-    <div>
+    <div className={darkMode ? "dark-mode" : null}>
+      <DarkMode />
+      <IntroHeader />
+      <SideNavigationBar />
       <Routes location={state?.backgroundLocation || location}>
-        <Route path="*" element={<Layout />} />
+        <Route path="*" element={<Home />} />
         <Route path="/navigate" element={<SideModal />} />
+        <Route path="/stacks" element={<Stacks />} />
+
         <Route
           path="/authorized"
           element={
@@ -31,7 +44,32 @@ export default function App() {
             </RequireAuth>
           }
         />
-        {/* <Route path="/" element={<Layout />}>
+      </Routes>
+
+      {/* Show the modal when a `backgroundLocation` is set */}
+      {state?.backgroundLocation && (
+        <Routes>
+          <Route path="/img/:id" element={<Modal />} />
+        </Routes>
+      )}
+
+      <ServiceFooter />
+    </div>
+  );
+}
+
+function Layout() {
+  return (
+    <div>
+      <Home />
+      <AuthStatus />
+      <Navbar />
+      {/* <Outlet /> */}
+    </div>
+  );
+}
+
+/* <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="/img/:id" element={<ImageView />} />
@@ -47,36 +85,13 @@ export default function App() {
           />
           <Route path="/navigate" element={<SideModal />} />
           <Route path="*" element={<NoMatch />} />
-        </Route> */}
-      </Routes>
-
-      {/* Show the modal when a `backgroundLocation` is set */}
-      {state?.backgroundLocation && (
-        <Routes>
-          <Route path="/img/:id" element={<Modal />} />
-        </Routes>
-      )}
-    </div>
-  );
-}
-
-function Layout() {
-  return (
-    <div>
-      <Home />
-      <AuthStatus />
-      <Navbar />
-
-      <Outlet />
-    </div>
-  );
-}
+        </Route> */
 
 // function Layout() {
 //   return (
 //     <div>
 //       <IntroHeader />
-//       <SideNavigation />
+//       <SideNavigationBar />
 //       <AuthStatus />
 
 //       <Outlet />

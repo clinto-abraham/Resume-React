@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -36,10 +36,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 250px;
-  height: 770px;
-  /* z-index: 10; */
-}
+} */
+
+
+
+
+
+
+
+
 
 /* #root {
   max-width: 1280px;
