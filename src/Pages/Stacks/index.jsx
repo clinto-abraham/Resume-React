@@ -1,3 +1,5 @@
+import ButtonTOC from "../../components/Buttons/ButtonTOC";
+
 const Stacks = () => {
   return (
     <>
@@ -27,7 +29,9 @@ const Stacks = () => {
         </div>
 
         <div className="caption">
-          <span className="without-border">SCROLL DOWN</span>
+          <span className="without-border">
+            <ButtonTOC title="SCROLL DOWN" id="grow-button" />
+          </span>
         </div>
       </div>
 

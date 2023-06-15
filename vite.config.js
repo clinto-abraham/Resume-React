@@ -7,4 +7,11 @@ export default defineConfig({
   server: {
     port: 7000,
   },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       includePaths: ["node_modules"],
+  //     },
+  //   },
+  // },
 });

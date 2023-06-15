@@ -4,7 +4,7 @@ export default function ServiceSubscriptions() {
   return (
     <section className="section-tours" id="section-tours">
       <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">Most popular tours</h2>
+        <h2 className="heading-secondary">Most popular Services</h2>
       </div>
 
       <div className="row">
@@ -14,16 +14,16 @@ export default function ServiceSubscriptions() {
               <div className="card__picture card__picture--1">&nbsp;</div>
               <h4 className="card__heading">
                 <span className="card__heading-span card__heading-span--1">
-                  The Sea Explorer
+                  The Frontend Development
                 </span>
               </h4>
               <div className="card__details">
                 <ul>
-                  <li>3 day tours</li>
-                  <li>Up to 30 people</li>
-                  <li>2 tour guides</li>
-                  <li>Sleep in cozy hotels</li>
-                  <li>Difficulty: easy</li>
+                  <li>3 years support</li>
+                  <li>Up to 30 designs</li>
+                  <li>3 environment</li>
+                  <li>Sleep tight until all work is finished</li>
+                  <li>Ratings: 4/5</li>
                 </ul>
               </div>
             </div>
@@ -34,10 +34,11 @@ export default function ServiceSubscriptions() {
                   <p className="card__price-value">$297</p>
                 </div>
                 <Link
-                  to="/popup" //   href="/popup"
+                  to="/popup"
+                  //   href="/popup"
                   className="btn btn--white"
                 >
-                  Book now!
+                  Add to cart
                 </Link>
               </div>
             </div>
@@ -50,16 +51,17 @@ export default function ServiceSubscriptions() {
               <div className="card__picture card__picture--2">&nbsp;</div>
               <h4 className="card__heading">
                 <span className="card__heading-span card__heading-span--2">
-                  The Forest Hiker
+                  The Backend Development
                 </span>
               </h4>
               <div className="card__details">
                 <ul>
-                  <li>7 day tours</li>
-                  <li>Up to 40 people</li>
-                  <li>6 tour guides</li>
-                  <li>Sleep in provided tents</li>
-                  <li>Difficulty: medium</li>
+                  <li>5 years support</li>
+                  <li>Up to 3 designs patterns</li>
+                  <li>2 environment</li>
+                  <li>Postman testing</li>
+                  <li>Sleep tight until all work is finished</li>
+                  <li>Ratings: 4.5/5</li>
                 </ul>
               </div>
             </div>
@@ -72,7 +74,7 @@ export default function ServiceSubscriptions() {
                 <Link // to="/popup"
                   className="btn btn--white"
                 >
-                  Book now!
+                  Add to cart
                 </Link>
               </div>
             </div>
@@ -85,16 +87,16 @@ export default function ServiceSubscriptions() {
               <div className="card__picture card__picture--3">&nbsp;</div>
               <h4 className="card__heading">
                 <span className="card__heading-span card__heading-span--3">
-                  The Snow Adventurer
+                  The Cloud Support
                 </span>
               </h4>
               <div className="card__details">
                 <ul>
-                  <li>5 day tours</li>
-                  <li>Up to 15 people</li>
-                  <li>3 tour guides</li>
-                  <li>Sleep in provided tents</li>
-                  <li>Difficulty: hard</li>
+                  <li>Salesforce Marketing Cloud</li>
+                  <li>Salesforce Administrator</li>
+                  <li>MongoDB NoSQL</li>
+                  <li>AWS SQL deployment</li>
+                  <li>Lambda functions</li>
                 </ul>
               </div>
             </div>
@@ -107,7 +109,7 @@ export default function ServiceSubscriptions() {
                 <Link // to="/popup"
                   className="btn btn--white"
                 >
-                  Book now!
+                  Add to Cart
                 </Link>
               </div>
             </div>

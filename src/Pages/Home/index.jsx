@@ -1,25 +1,29 @@
-// import ExtraGrid from "./ExtraGrid";
-import ServiceConnect from "./ServiceConnect";
-import ServiceTestimony from "./ServiceTestimony";
-import ServiceSubscriptions from "./ServiceSubscriptions";
-import ServiceFeatures from "./ServiceFeatures";
-import AboutService from "./AboutService";
+// import ExtraGrid from "../../components/Home/ExtraGrid";
+import ServiceConnect from "../../components/Home/ServiceConnect";
+import ServiceTestimony from "../../components/Home/ServiceTestimony";
+import ServiceSubscriptions from "../../components/Home/ServiceSubscriptions";
+import ServiceFeatures from "../../components/Home/ServiceFeatures";
+import AboutService from "../../components/Home/AboutService";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { routerTOC } from "../../utils/helpers/router.helper";
+import { useNavigate } from "react-router-dom";
+import ZoomCard from "../../components/ZoomCard";
+import FlipCard from "../../components/FlipCard";
+// import FlipCardHorizontal from "../../components/FlipCard/Horizontal";
 
 const Home = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   useEffect(() => {
-    if (location.pathname === "/gallery") {
-      window.scrollTo({
-        top: 2040,
-        behavior: "smooth",
-      });
-    }
+    routerTOC(location, navigate);
   }, []);
 
   return (
     <main>
+      <ZoomCard />
+      <FlipCard className="vertical" />
+      <FlipCard className="horizontal" />
       <AboutService />
       <ServiceFeatures />
       <ServiceSubscriptions />

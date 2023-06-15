@@ -5,7 +5,7 @@ import Modal from "./components/Modal";
 import RequireAuth from "./components/Authentication/RequireAuth";
 
 import Home from "./pages/Home";
-import SideModal from "./pages/Home/SideModal";
+import SideModal from "./components/Home/SideModal";
 // import Gallery from "./components/Gallery";
 // import ImageView from "./components/ImageView";
 // import LoginPage from "./components/Authentication/LoginPage";
@@ -18,9 +18,11 @@ import Navbar from "./components/Navbar";
 import DarkMode from "./components/DarkMode";
 
 import Stacks from "./pages/Stacks";
-import SideNavigationBar from "./pages/Home/SideNavigationBar";
-import ServiceFooter from "./pages/Home/ServiceFooter";
-import IntroHeader from "./pages/Home/IntroHeader";
+import SideNavigationBar from "./components/Home/SideNavigationBar";
+import ServiceFooter from "./components/Home/ServiceFooter";
+import IntroHeader from "./components/Home/IntroHeader";
+import Test from "./pages/Test";
+import NoMatch from "./pages/404/NoMatch";
 
 export default function App() {
   let location = useLocation();
@@ -33,9 +35,10 @@ export default function App() {
       <SideNavigationBar />
       <Routes location={state?.backgroundLocation || location}>
         <Route path="*" element={<Home />} />
+        <Route path="/not-found" element={<NoMatch />} />
         <Route path="/navigate" element={<SideModal />} />
         <Route path="/stacks" element={<Stacks />} />
-
+        <Route path="/test" element={<Test />} />
         <Route
           path="/authorized"
           element={

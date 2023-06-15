@@ -8,20 +8,20 @@ const links = [
     name: "Home",
   },
   {
-    route: "/gallery",
-    name: "Gallery",
+    route: "/about",
+    name: "About",
   },
   {
-    route: "/stacks",
-    name: "Stacks",
+    route: "/service",
+    name: "Services",
   },
   {
-    route: "/authorized",
-    name: "Protected Page",
+    route: "/testimony",
+    name: "Testimony",
   },
   {
-    route: "/img/1",
-    name: "Image 1",
+    route: "/connect",
+    name: "Connect with me!",
   },
   {
     route: "/img/2",

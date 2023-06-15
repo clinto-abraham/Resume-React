@@ -101,3 +101,22 @@
     transform: translateY(0);
   }
 }
+
+#grow-button {
+  width: 100px;
+  height: 70px;
+  background: rgb(75, 81, 75);
+  color: white;
+  transition: width 1.2s;
+  transition-timing-function: linear;
+
+  &:hover {
+    width: 200px;
+    background: rgb(38, 77, 89);
+  }
+}
+
+// #grow-button:hover {
+//   width: 200px;
+//   background: rgb(38, 77, 89);
+// }

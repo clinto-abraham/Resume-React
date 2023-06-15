@@ -1,6 +1,6 @@
 export default function ExtraGrid() {
   return (
-    <section className="grid-test">
+    <section className="grid">
       <div className="row">
         <div className="col-1-of-2">Col 1 of 2</div>
         <div className="col-1-of-2">Col 1 of 2</div>

@@ -1,21 +1,23 @@
 #header {
-  background-color: #f1f1f1;
-  padding: 50px 10px;
-  color: rgb(150, 26, 26);
+  background-color: #20a7d8;
+  padding: 5% 10%;
+  color: rgb(231, 167, 167);
   text-align: center;
   font-weight: bold;
   position: fixed;
   top: 0;
   width: 100%;
 
-  font-size: 90px;
   #header-30 {
     font-size: 30px;
-    transition: 3.9s;
-    z-index: 7000;
+    max-height: 10px;
+    transition: 0.9s;
+    // opacity: 0.2;
+    // z-index: 9999;
   }
   #header-90 {
     font-size: 90px;
+    height: 1000px;
     transition: 2.9s;
   }
 }
