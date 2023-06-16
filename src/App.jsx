@@ -1,21 +1,14 @@
 import { Routes, Route, useLocation, useSelector } from "./utils/commons";
 
 import "@reach/dialog/styles.css";
-import Modal from "./components/Modal";
-import RequireAuth from "./components/Authentication/RequireAuth";
+import Modal from "./components/Helpers/Modal";
+import RequireAuth from "./components/Login/RequireAuth";
 
 import Home from "./pages/Home";
 import SideModal from "./components/Home/SideModal";
-// import Gallery from "./components/Gallery";
-// import ImageView from "./components/ImageView";
-// import LoginPage from "./components/Authentication/LoginPage";
-// import SideNavigationBar from "./pages/Home/SideNavigationBar";
-// import IntroHeader from "./pages/Home/IntroHeader";
-// import ServiceFooter from "./pages/Home/ServiceFooter";
-// import NoMatch from "./pages/404/NoMatch";
-import AuthStatus from "./components/Authentication/AuthStatus";
-import Navbar from "./components/Navbar";
-import DarkMode from "./components/DarkMode";
+// import AuthStatus from "./components/Login/AuthStatus";
+// import Navbar from "./components/Navbar";
+import DarkMode from "./components/Helpers/DarkMode";
 
 import Stacks from "./pages/Stacks";
 import SideNavigationBar from "./components/Home/SideNavigationBar";
@@ -23,6 +16,8 @@ import ServiceFooter from "./components/Home/ServiceFooter";
 import IntroHeader from "./components/Home/IntroHeader";
 import Test from "./pages/Test";
 import NoMatch from "./pages/404/NoMatch";
+import ComingSoon from "./pages/ComingSoon";
+import Projects from "./pages/Projects";
 
 export default function App() {
   let location = useLocation();
@@ -36,9 +31,12 @@ export default function App() {
       <Routes location={state?.backgroundLocation || location}>
         <Route path="*" element={<Home />} />
         <Route path="/not-found" element={<NoMatch />} />
+        <Route path="/projects" element={<Projects />} />
+
         <Route path="/navigate" element={<SideModal />} />
         <Route path="/stacks" element={<Stacks />} />
         <Route path="/test" element={<Test />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
         <Route
           path="/authorized"
           element={
@@ -61,16 +59,24 @@ export default function App() {
   );
 }
 
-function Layout() {
-  return (
-    <div>
-      <Home />
-      <AuthStatus />
-      <Navbar />
-      {/* <Outlet /> */}
-    </div>
-  );
-}
+// function Layout() {
+//   return (
+//     <div>
+//       <Home />
+//       <AuthStatus />
+//       <Navbar />
+//       {/* <Outlet /> */}
+//     </div>
+//   );
+// }
+
+// import Gallery from "./components/Gallery";
+// import ImageView from "./components/ImageView";
+// import LoginPage from "./components/Login/LoginPage";
+// import SideNavigationBar from "./pages/Home/SideNavigationBar";
+// import IntroHeader from "./pages/Home/IntroHeader";
+// import ServiceFooter from "./pages/Home/ServiceFooter";
+// import NoMatch from "./pages/404/NoMatch";
 
 /* <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

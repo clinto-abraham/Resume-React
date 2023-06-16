@@ -1,5 +1,5 @@
-import { Link, useLocation } from "../../utils/commons";
-import { IMAGES } from "../../utils/IMAGES";
+import { Link, useLocation } from "../../../utils/commons";
+import { IMAGES } from "../../../utils/IMAGES";
 
 function Gallery() {
   let location = useLocation();

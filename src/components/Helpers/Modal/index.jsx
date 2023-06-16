@@ -1,7 +1,7 @@
 import { Dialog } from "@reach/dialog";
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import getImageById from "../../utils/IMAGES";
+import getImageById from "../../../utils/IMAGES";
 
 function Modal() {
   let navigate = useNavigate();

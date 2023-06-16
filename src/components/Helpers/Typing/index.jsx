@@ -10,4 +10,4 @@ export default function Typing({ content }) {
 
 Typing.propTypes = {
   content: PropTypes.string.isRequired,
-}
+};

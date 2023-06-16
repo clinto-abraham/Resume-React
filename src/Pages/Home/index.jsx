@@ -8,9 +8,11 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { routerTOC } from "../../utils/helpers/router.helper";
 import { useNavigate } from "react-router-dom";
-import ZoomCard from "../../components/ZoomCard";
-import FlipCard from "../../components/FlipCard";
+import ZoomCard from "../../components/Helpers/ZoomCard";
+import FlipCard from "../../components/Helpers/FlipCard";
 // import FlipCardHorizontal from "../../components/FlipCard/Horizontal";
+import IconsTOC from "../../components/Helpers/IconsTOC";
+import GranularServiceCounter from "../../components/Helpers/GranularServiceCounter";
 
 const Home = () => {
   const location = useLocation();
@@ -21,7 +23,9 @@ const Home = () => {
 
   return (
     <main>
+      <IconsTOC type="arrow" direction="right" />
       <ZoomCard />
+
       <FlipCard className="vertical" />
       <FlipCard className="horizontal" />
       <AboutService />
@@ -29,6 +33,7 @@ const Home = () => {
       <ServiceSubscriptions />
       <ServiceTestimony />
       <ServiceConnect />
+      <GranularServiceCounter />
     </main>
   );
 };

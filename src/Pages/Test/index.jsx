@@ -1,4 +1,4 @@
-import { LogoPolygon } from "../../components/Polygon";
+import { LogoPolygon } from "../../components/Test/Polygon";
 
 const Test = () => {
   return <LogoPolygon />;

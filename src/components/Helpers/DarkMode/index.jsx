@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
-import { registerDarkModeToggle } from "../../redux/navbarSlice";
+import { registerDarkModeToggle } from "../../../redux/navbarSlice";
 // MdDarkMode
 import { MdDarkMode } from "react-icons/Md";
 import { BsFillSunFill } from "react-icons/Bs";
-import ButtonTOC from "../Buttons/ButtonTOC";
+import ButtonTOC from "../ButtonTOC";
 
 const DarkMode = () => {
   const dispatch = useDispatch();

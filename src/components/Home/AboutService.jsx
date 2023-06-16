@@ -8,7 +8,6 @@ export default function AboutService() {
           Exciting tours for adventurous people
         </h2>
       </div>
-
       <div className="row">
         <div className="col-1-of-2">
           <h3 className="heading-tertiary u-margin-bottom-small">

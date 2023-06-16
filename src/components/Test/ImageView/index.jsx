@@ -1,5 +1,5 @@
-import getImageById from "../../utils/IMAGES";
-import { useParams } from "../../utils/commons";
+import getImageById from "../../../utils/IMAGES";
+import { useParams } from "../../../utils/commons";
 
 function ImageView() {
   let { id } = useParams();

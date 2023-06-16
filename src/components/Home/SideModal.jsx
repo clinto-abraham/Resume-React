@@ -24,6 +24,14 @@ const links = [
     name: "Connect with me!",
   },
   {
+    route: "/coming-soon",
+    name: "Coming Soon",
+  },
+  {
+    route: "/projects",
+    name: "Projects",
+  },
+  {
     route: "/img/2",
     name: "Image 2",
   },

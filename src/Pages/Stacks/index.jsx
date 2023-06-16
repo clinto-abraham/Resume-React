@@ -1,4 +1,4 @@
-import ButtonTOC from "../../components/Buttons/ButtonTOC";
+import ButtonTOC from "../../components/Helpers/ButtonTOC";
 
 const Stacks = () => {
   return (
