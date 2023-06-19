@@ -1,64 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './Styles/index.css'
-import { Provider } from 'react-redux';
-import { SnackbarProvider } from 'notistack';
-import { store } from './Redux/store';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./styles/_main.scss";
+import { Provider } from "react-redux";
+// import { SnackbarProvider } from 'notistack';
+import { store } from "./redux/store";
+import { BrowserRouter } from "react-router-dom";
+import AuthProvider from "./context/AuthProvider.jsx";
 
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <SnackbarProvider maxSnack={3}>
-        <App />
-      </SnackbarProvider>
-    </Provider >
-  </React.StrictMode >,
-)
-
-
-// import React from 'react';
-// import { RouterProvider, createBrowserRouter } from './Utils/exports'
-// import ReactDOM from 'react-dom/client'
-// import { Provider } from 'react-redux';
-// import { SnackbarProvider } from 'notistack';
-// import { store } from './Redux/store';
-// import './Styles/index.css'
-// import App from './App';
-// import ErrorPage from './Pages/NotFound';
-// import PrivacyPolicy from './Pages/Privacy-Policy';
-// import TermsConditions from './Pages/Terms&Conditions';
-// import About from './Pages/About';
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <App />,
-//     errorElement: <ErrorPage />,
-//   },
-//   {
-//     path: "/privacy-&-policy",
-//     element: <PrivacyPolicy />,
-//   },
-//   {
-//     path: "/terms-of-service",
-//     element: <TermsConditions />,
-//   },
-//   {
-//     path: "/about",
-//     element: <About />,
-//   },
-// ]);
-
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <Provider store={store}>
-//       <SnackbarProvider maxSnack={3}>
-//         <RouterProvider router={router} />
-//       </SnackbarProvider>
-//     </Provider >
-//   </React.StrictMode >,
-// )
-
+      <AuthProvider>
+        {/* <SnackbarProvider maxSnack={3}> */}
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+        {/* </SnackbarProvider> */}
+      </AuthProvider>
+    </Provider>
+  </React.StrictMode>
+);

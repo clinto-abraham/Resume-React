@@ -1,31 +1,30 @@
-import { createSlice } from '../Utils/exports'
+import { createSlice } from "../utils/commons";
 
 const initialState = {
-    user: {
-        accessToken: '',
-        displayName: '',
-        email: '',
-        emailVerified: false,
-        isAnonymous: true,
-        phoneNumber: null,
-        photoURL: '',
-        providerId: 'firebase',
-        tenantId: null,
-        uid: ''
-    }
-}
-
+  user: {
+    accessToken: "",
+    displayName: "",
+    email: "",
+    emailVerified: false,
+    isAnonymous: true,
+    phoneNumber: null,
+    photoURL: "",
+    providerId: "firebase",
+    tenantId: null,
+    uid: "",
+  },
+};
 
 export const loginSlice = createSlice({
-    name: 'userInfo',
-    initialState,
-    reducers: {
-        registerUser: (state, action) => {
-            state.user = action.payload;
-        },
-    }
-})
+  name: "userInfo",
+  initialState,
+  reducers: {
+    registerUser: (state, action) => {
+      state.user = action.payload;
+    },
+  },
+});
 
-export const { registerUser } = loginSlice.actions
+export const { registerUser } = loginSlice.actions;
 
 export default loginSlice.reducer;
