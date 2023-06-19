@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import sass from "sass";
 // https://vitejs.dev/config/
 
 export default defineConfig({
@@ -8,14 +7,23 @@ export default defineConfig({
   server: {
     port: 7000,
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        implementation: sass,
-      },
-    },
-  },
 });
+
+// import { resolve } from "path";
+// import sass from "sass";
+
+// resolve: {
+//   alias: {
+//     $fonts: resolve("./public"),
+//   },
+// },
+// css: {
+//   preprocessorOptions: {
+//     scss: {
+//       implementation: sass,
+//     },
+//   },
+// },
 
 // css: {
 //   preprocessorOptions: {
@@ -24,3 +32,11 @@ export default defineConfig({
 //     },
 //   },
 // },
+
+// const config = {
+//   resolve: {
+//     alias: {
+//       $fonts: resolve('./public')
+//     }
+//   }
+// };
