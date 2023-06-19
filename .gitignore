@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+clinto-portfolio
+.env
+clinto-curriculum-vitae
+transferOld
