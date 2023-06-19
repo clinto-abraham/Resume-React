@@ -1,4 +1,4 @@
-import Laptop from "../../components/Helpers/Laptop";
+import Laptop from "../../components/Fragments/Laptop";
 
 const Projects = () => {
   return (

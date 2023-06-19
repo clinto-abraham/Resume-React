@@ -1,19 +1,19 @@
 import { Routes, Route, useLocation, useSelector } from "./utils/commons";
 
-import "@reach/dialog/styles.css";
-import Modal from "./components/Helpers/Modal";
-import RequireAuth from "./components/Login/RequireAuth";
+// import "@reach/dialog/styles.css";
+import Modal from "./components/Fragments/Modal";
+import RequireAuth from "./components/Pages/Login/RequireAuth";
 
 import Home from "./pages/Home";
-import SideModal from "./components/Home/SideModal";
+import SideModal from "./components/Fragments/Modal/SideModal";
 // import AuthStatus from "./components/Login/AuthStatus";
 // import Navbar from "./components/Navbar";
-import DarkMode from "./components/Helpers/DarkMode";
+import DarkMode from "./components/Fragments/DarkMode";
 
 import Stacks from "./pages/Stacks";
-import SideNavigationBar from "./components/Home/SideNavigationBar";
-import ServiceFooter from "./components/Home/ServiceFooter";
-import IntroHeader from "./components/Home/IntroHeader";
+import SideBar from "./components/Fragments/Navigation/SideBar";
+import ServiceFooter from "./components/Pages/Home/ServiceFooter";
+import IntroHeader from "./components/Pages/Home/IntroHeader";
 import Test from "./pages/Test";
 import NoMatch from "./pages/404/NoMatch";
 import ComingSoon from "./pages/ComingSoon";
@@ -27,7 +27,8 @@ export default function App() {
     <div className={darkMode ? "dark-mode" : null}>
       <DarkMode />
       <IntroHeader />
-      <SideNavigationBar />
+
+      <SideBar />
       <Routes location={state?.backgroundLocation || location}>
         <Route path="*" element={<Home />} />
         <Route path="/not-found" element={<NoMatch />} />

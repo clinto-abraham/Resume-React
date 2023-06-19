@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import { Dialog } from "@reach/dialog";
-import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+// import React from "react";
+import Modal from "./index";
 
 const links = [
   {
@@ -38,20 +38,25 @@ const links = [
 ];
 
 export default function SideModal() {
-  // let navigate = useNavigate();
-  let buttonRef = React.useRef(null);
-  // function onDismiss() {
-  //   navigate(-1);
-  // }
+  let navigate = useNavigate();
+  // let buttonRef = React.useRef(null);
+  function onDismiss() {
+    navigate(-1);
+  }
 
   return (
     <section>
-      <Dialog
-        aria-labelledby="label"
-        initialFocusRef={buttonRef}
-        style={{
-          backgroundColor: "transparent",
-        }}
+      <Modal
+        modalName="smallModal"
+        modalTitle="Small Modal"
+        toggleModal={onDismiss}
+        modalOpen={true}
+
+        // aria-labelledby="label"
+        // initialFocusRef={buttonRef}
+        // style={{
+        //   backgroundColor: "transparent",
+        // }}
       >
         <section>
           <ul className="navigation__list">
@@ -64,10 +69,81 @@ export default function SideModal() {
             ))}
           </ul>
         </section>
-      </Dialog>
+      </Modal>
     </section>
   );
 }
+
+// import { Link } from "react-router-dom";
+// import { Dialog } from "@reach/dialog";
+// import React from "react";
+
+// const links = [
+//   {
+//     route: "/",
+//     name: "Home",
+//   },
+//   {
+//     route: "/about",
+//     name: "About",
+//   },
+//   {
+//     route: "/service",
+//     name: "Services",
+//   },
+//   {
+//     route: "/testimony",
+//     name: "Testimony",
+//   },
+//   {
+//     route: "/connect",
+//     name: "Connect with me!",
+//   },
+//   {
+//     route: "/coming-soon",
+//     name: "Coming Soon",
+//   },
+//   {
+//     route: "/projects",
+//     name: "Projects",
+//   },
+//   {
+//     route: "/img/2",
+//     name: "Image 2",
+//   },
+// ];
+
+// export default function SideModal() {
+//   // let navigate = useNavigate();
+//   let buttonRef = React.useRef(null);
+//   // function onDismiss() {
+//   //   navigate(-1);
+//   // }
+
+//   return (
+//     <section>
+//       <Dialog
+//         aria-labelledby="label"
+//         initialFocusRef={buttonRef}
+//         style={{
+//           backgroundColor: "transparent",
+//         }}
+//       >
+//         <section>
+//           <ul className="navigation__list">
+//             {links.map((data, index) => (
+//               <li key={data.route + index} className="navigation__item">
+//                 <Link to={data.route} className="navigation__link">
+//                   <span>{index + 1}</span> {data.name}
+//                 </Link>
+//               </li>
+//             ))}
+//           </ul>
+//         </section>
+//       </Dialog>
+//     </section>
+//   );
+// }
 
 // <li className="navigation__item">
 //               <Link to="/gallery" className="navigation__link">

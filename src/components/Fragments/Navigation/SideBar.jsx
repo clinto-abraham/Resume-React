@@ -1,9 +1,9 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { registerSideNavbarToggle } from "../../redux/navbarSlice";
+import { registerSideNavbarToggle } from "../../../redux/navbarSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 
-export default function SideNavigationBar() {
+export default function SideBar() {
   let navigate = useNavigate();
   const dispatch = useDispatch();
   const location = useLocation();

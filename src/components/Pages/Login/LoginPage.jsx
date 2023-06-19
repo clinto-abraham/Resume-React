@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "../../utils/commons";
-import useAuth from "../../hooks/useAuth";
+import useAuth from "../../../hooks/useAuth";
 
 function LoginPage() {
   let navigate = useNavigate();

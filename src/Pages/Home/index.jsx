@@ -1,18 +1,18 @@
 // import ExtraGrid from "../../components/Home/ExtraGrid";
-import ServiceConnect from "../../components/Home/ServiceConnect";
-import ServiceTestimony from "../../components/Home/ServiceTestimony";
-import ServiceSubscriptions from "../../components/Home/ServiceSubscriptions";
-import ServiceFeatures from "../../components/Home/ServiceFeatures";
-import AboutService from "../../components/Home/AboutService";
+import ServiceConnect from "../../components/Pages/Home/ServiceConnect";
+import ServiceTestimony from "../../components/Pages/Home/ServiceTestimony";
+import ServiceSubscriptions from "../../components/Pages/Home/ServiceSubscriptions";
+import ServiceFeatures from "../../components/Pages/Home/ServiceFeatures";
+import AboutService from "../../components/Pages/Home/AboutService";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { routerTOC } from "../../utils/helpers/router.helper";
 import { useNavigate } from "react-router-dom";
-import ZoomCard from "../../components/Helpers/ZoomCard";
-import FlipCard from "../../components/Helpers/FlipCard";
+import ZoomCard from "../../components/Fragments/ZoomCard";
+import FlipCard from "../../components/Fragments/FlipCard";
 // import FlipCardHorizontal from "../../components/FlipCard/Horizontal";
-import IconsTOC from "../../components/Helpers/IconsTOC";
-import GranularServiceCounter from "../../components/Helpers/GranularServiceCounter";
+import IconsTOC from "../../components/Fragments/IconsTOC";
+import GranularGrid from "../../components/Fragments/GranularGrid";
 
 const Home = () => {
   const location = useLocation();
@@ -33,7 +33,7 @@ const Home = () => {
       <ServiceSubscriptions />
       <ServiceTestimony />
       <ServiceConnect />
-      <GranularServiceCounter />
+      <GranularGrid />
     </main>
   );
 };
