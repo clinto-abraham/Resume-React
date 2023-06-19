@@ -1,0 +1,24 @@
+#bgImg {
+  position: relative;
+  background-image: url(https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-5.jpg);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  //   margin: 10rem 0;
+  color: rgb(197, 182, 13);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  hr {
+    margin: auto;
+    width: 40%;
+    color: rgb(197, 13, 44);
+  }
+}
