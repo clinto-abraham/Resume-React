@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import { registerDarkModeToggle } from "../../../redux/navbarSlice";
-// MdDarkMode
-import { MdDarkMode } from "react-icons/Md";
-import { BsFillSunFill } from "react-icons/Bs";
+// DarkModeIcon
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
 import ButtonTOC from "../ButtonTOC";
 
 const DarkMode = () => {
@@ -21,9 +21,9 @@ const DarkMode = () => {
           <ButtonTOC
             title={
               darkMode ? (
-                <BsFillSunFill className="btn__icon-dark" />
+                <LightModeIcon className="btn__icon-dark" />
               ) : (
-                <MdDarkMode className="btn__icon-dark" />
+                <DarkModeIcon className="btn__icon-dark" />
               )
             }
             id="btn"
