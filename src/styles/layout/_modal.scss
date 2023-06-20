@@ -1,40 +1,45 @@
 // modal
-.mymodal-overlay {
-  background-color: rgba(0, 0, 0, 0.52);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 12;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.2s ease-in-out 0.25s;
+.mymodal {
+  // min-width: 100rem;
+  background-color: blue;
 
-  &.active {
-    visibility: visible;
-    opacity: 1;
-    animation: superposerFadeIn 0.5s ease-in-out;
-  }
-}
-
-.mymodal-content {
-  box-shadow: 0px 2px 4px 0px rgba(46, 43, 43, 0.5);
-  display: flex;
-  align-content: stretch;
-  background-color: #fff;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 12;
-  transition: right 0.25s ease-in-out;
-  right: -105%;
-  width: 340px;
-  right: -351px;
-
-  &.active {
-    transition: right 0.25s ease-in-out 0.25s;
+  .mymodal-overlay {
+    background-color: rgba(0, 0, 0, 0.52);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
     right: 0;
+    z-index: 12;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out 0.25s;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+      animation: superposerFadeIn 0.5s ease-in-out;
+    }
+  }
+
+  .mymodal-content {
+    // box-shadow: 0px 2px 4px 0px rgba(46, 43, 43, 0.5);
+    box-shadow: 0px 2px 4px 0px rgba(46, 43, 43, 0.5);
+    display: flex;
+    align-content: stretch;
+    background-color: #02060c;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 12;
+    transition: right 0.25s ease-in-out;
+    right: -105%;
+    width: 340px;
+    right: -351px;
+
+    &.active {
+      transition: right 0.25s ease-in-out 0.25s;
+      right: 0;
+    }
   }
 }

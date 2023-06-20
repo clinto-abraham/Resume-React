@@ -50,7 +50,7 @@ export default function ServiceTestimony() {
         <div className="story">
           <figure className="story__shape">
             <img
-              src="nat-9.jpg"
+              src="https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-9.jpg"
               alt="Person on a tour"
               className="story__img"
             />

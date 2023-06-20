@@ -8,9 +8,9 @@ export default function ServiceFooter() {
           <source // srcset="logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
             media="(max-width: 37.5em)"
           />
-          <img // srcset="logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+          <img // srcset="logo-green-1x.png 1x, img/https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/logo-green-small-2x.png 2x"
             alt="Full logo"
-            src="logo-green-2x.png"
+            src="https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/logo-green-small-2x.png"
           />
         </picture>
       </div>

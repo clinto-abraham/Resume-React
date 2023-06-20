@@ -26,26 +26,34 @@ export default function IntroHeader() {
 
   return (
     <div>
-      <header className="header">
-        <div id="header">
+      <header
+        // id="header"
+        className="header"
+      >
+        {/* <div id="header">
           <h1 id={name}>I am Clinto</h1>
-        </div>
-        {/* <Polygon /> */}
-        <div className="header__logo-box">
-          <img src="logo-white.png" alt="Logo" className="header__logo" />
-        </div>
+        </div> */}
+        <div>
+          <div id={name} className="header__logo-box">
+            <img
+              src="https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/logo-white.png"
+              alt="Logo"
+              className="header__logo"
+            />
+          </div>
 
-        <div className="header__text-box">
-          <h1 className="heading-primary">
-            <span className="heading-primary--main">
-              Top Of Cliff Developer!
-            </span>
-            <span className="heading-primary--sub">dive into pure codes</span>
-          </h1>
+          <div className="header__text-box">
+            <h1 className="heading-primary">
+              <span className="heading-primary--main">
+                Top Of Cliff Developer!
+              </span>
+              <span className="heading-primary--sub">dive into pure codes</span>
+            </h1>
 
-          <Link to="/section-tours" className="btn btn--white btn--animated">
-            Discover our tours
-          </Link>
+            <Link to="/section-tours" className="btn btn--white btn--animated">
+              Discover our tours
+            </Link>
+          </div>
         </div>
       </header>
     </div>

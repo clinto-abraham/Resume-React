@@ -33,30 +33,30 @@ export default function AboutService() {
         </div>
         <div className="col-1-of-2">
           <div className="composition">
-            <img // srcset="nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+            <img // srcset="nat-1.jpg 300w, img/https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-1-large.jpg 1000w"
               sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
               alt="Photo 1"
               className="composition__photo composition__photo--p1"
-              src="nat-1-large.jpg"
+              src="https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-1-large.jpg"
             />
 
-            <img // srcset="nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+            <img // srcset="nat-2.jpg 300w, img/https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-2-large.jpg 1000w"
               sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
               alt="Photo 2"
               className="composition__photo composition__photo--p2"
-              src="nat-2-large.jpg"
+              src="https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-2-large.jpg"
             />
 
-            <img // srcset="nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+            <img // srcset="nat-3.jpg 300w, img/https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-3-large.jpg 1000w"
               sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
               alt="Photo 3"
               className="composition__photo composition__photo--p3"
-              src="nat-3-large.jpg"
+              src="https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-3-large.jpg"
             />
 
-            {/* <img src="nat-1-large.jpg" alt="Photo 1" className="composition__photo composition__photo--p1">
-                       <img src="nat-2-large.jpg" alt="Photo 2" className="composition__photo composition__photo--p2">
-                       <img src="nat-3-large.jpg" alt="Photo 3" className="composition__photo composition__photo--p3"> */}
+            {/* <img src="https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-1-large.jpg" alt="Photo 1" className="composition__photo composition__photo--p1">
+                       <img src="https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-2-large.jpg" alt="Photo 2" className="composition__photo composition__photo--p2">
+                       <img src="https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-3-large.jpg" alt="Photo 3" className="composition__photo composition__photo--p3"> */}
           </div>
         </div>
       </div>

@@ -8,11 +8,10 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { routerTOC } from "../../utils/helpers/router.helper";
 import { useNavigate } from "react-router-dom";
-import ZoomCard from "../../components/Fragments/ZoomCard";
-import FlipCard from "../../components/Fragments/FlipCard";
-// import FlipCardHorizontal from "../../components/FlipCard/Horizontal";
-import IconsTOC from "../../components/Fragments/IconsTOC";
-import GranularGrid from "../../components/Fragments/GranularGrid";
+// import ZoomCard from "../../components/Fragments/ZoomCard";
+// import FlipCard from "../../components/Fragments/FlipCard";
+// import IconsTOC from "../../components/Fragments/IconsTOC";
+// import GranularGrid from "../../components/Fragments/GranularGrid";
 
 const Home = () => {
   const location = useLocation();
@@ -23,17 +22,16 @@ const Home = () => {
 
   return (
     <main>
-      <IconsTOC type="arrow" direction="right" />
-      <ZoomCard />
+      {/* <ZoomCard />
 
       <FlipCard className="vertical" />
-      <FlipCard className="horizontal" />
+      <FlipCard className="horizontal" /> */}
       <AboutService />
       <ServiceFeatures />
       <ServiceSubscriptions />
       <ServiceTestimony />
       <ServiceConnect />
-      <GranularGrid />
+      {/* <GranularGrid /> */}
     </main>
   );
 };

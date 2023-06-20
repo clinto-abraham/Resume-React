@@ -3,7 +3,7 @@ import { registerDarkModeToggle } from "../../../redux/navbarSlice";
 // DarkModeIcon
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
-import ButtonTOC from "../ButtonTOC";
+import ButtonTOC from "../../Fragments/ButtonTOC";
 
 const DarkMode = () => {
   const dispatch = useDispatch();

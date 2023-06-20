@@ -4,7 +4,7 @@ export const Introduction = () => (
       <div className="profile">
         <img
           className="profile-pic"
-          src="Images/clinto.jpg"
+          src="https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/clinto.jpg"
           alt="Clinto Profile Pic"
         />
         <h2 className="profile-intro">Hello.</h2>

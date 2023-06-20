@@ -6,7 +6,7 @@ export default function ServiceConnect() {
           <div className="book__form">
             <form action="#" className="form">
               <div className="u-margin-bottom-medium">
-                <h2 className="heading-secondary">Start booking now</h2>
+                <h2 className="heading-secondary">Subscribe now</h2>
               </div>
 
               <div className="form__group">
@@ -41,7 +41,7 @@ export default function ServiceConnect() {
                   />
                   <label className="form__radio-label">
                     <span className="form__radio-button"></span>
-                    Small tour group
+                    Small project enquiry
                   </label>
                 </div>
 
@@ -54,7 +54,7 @@ export default function ServiceConnect() {
                   />
                   <label className="form__radio-label">
                     <span className="form__radio-button"></span>
-                    Large tour group
+                    Large project enquiry
                   </label>
                 </div>
               </div>
