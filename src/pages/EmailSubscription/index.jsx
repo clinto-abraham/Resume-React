@@ -1,4 +1,3 @@
-// import React from "react";
 import { registerModalToggle } from "../../redux/subscribeSlice";
 import "../../styles/App.css";
 import { useDispatch, useSelector } from "react-redux";

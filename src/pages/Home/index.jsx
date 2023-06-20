@@ -38,7 +38,7 @@ const Home = () => {
   );
 };
 
-// import React from "react";
+//
 // import { useDispatch, useSelector } from "react-redux";
 // import {
 //   Link,
@@ -231,7 +231,7 @@ export const Introduction = () => {
 
 export default Home;
 
-// import React from "react";
+//
 // import { useDispatch, useSelector } from "react-redux";
 // import {
 //   Link,

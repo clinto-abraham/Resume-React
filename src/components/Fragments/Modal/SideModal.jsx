@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-// import React from "react";
 import Modal from "./index";
 
 const links = [
@@ -76,7 +75,7 @@ export default function SideModal() {
 
 // import { Link } from "react-router-dom";
 // import { Dialog } from "@reach/dialog";
-// import React from "react";
+//
 
 // const links = [
 //   {
