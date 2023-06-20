@@ -14,6 +14,9 @@ import NoMatch from "./pages/404/NoMatch";
 import ComingSoon from "./pages/ComingSoon";
 import Projects from "./pages/Projects";
 import FooterNavbar from "./components/Layout/Navbar/BottomBar";
+import IconBar from "./components/Layout/Navbar/IconBar";
+import UserRatings from "./components/Fragments/UserRatings";
+import TimeLine from "./components/Pages/Profile/TimeLine";
 
 export default function App() {
   let location = useLocation();
@@ -23,6 +26,7 @@ export default function App() {
     <div className={darkMode ? "dark-mode" : null}>
       <Hero />
       <IntroHeader />
+      <IconBar />
 
       <SideBar />
       <Routes location={state?.backgroundLocation || location}>
@@ -52,6 +56,8 @@ export default function App() {
       )}
 
       {/* <ServiceFooter /> */}
+      <UserRatings />
+      <TimeLine />
       <FooterNavbar />
     </div>
   );

@@ -1,3 +1,9 @@
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import FormLabel from "@mui/material/FormLabel";
+
 export default function ServiceConnect() {
   return (
     <section className="section-book">
@@ -32,7 +38,39 @@ export default function ServiceConnect() {
               </div>
 
               <div className="form__group u-margin-bottom-medium">
-                <div className="form__radio-group">
+                <FormControl>
+                  <FormLabel id="demo-row-radio-buttons-group-label">
+                    Project Enquiry
+                  </FormLabel>
+                  <RadioGroup
+                    row
+                    aria-labelledby="demo-row-radio-buttons-group-label"
+                    name="row-radio-buttons-group"
+                  >
+                    <FormControlLabel
+                      value="Small"
+                      control={<Radio />}
+                      label="Small"
+                    />
+                    <FormControlLabel
+                      value="medium"
+                      control={<Radio />}
+                      label="medium"
+                    />
+                    <FormControlLabel
+                      value="large"
+                      control={<Radio />}
+                      label="large"
+                    />
+                    <FormControlLabel
+                      value="disabled"
+                      disabled
+                      control={<Radio />}
+                      label="other"
+                    />
+                  </RadioGroup>
+                </FormControl>
+                {/* <div className="form__radio-group">
                   <input
                     type="radio"
                     className="form__radio-input"
@@ -56,7 +94,7 @@ export default function ServiceConnect() {
                     <span className="form__radio-button"></span>
                     Large project enquiry
                   </label>
-                </div>
+                </div> */}
               </div>
 
               <div className="form__group">
