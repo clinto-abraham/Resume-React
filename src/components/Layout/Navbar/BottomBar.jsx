@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-key */
 import { registerSelected } from "../../../redux/footerSlice";
+import { BottomBarIcons } from "../../../utils/Icons";
 import {
   // Link, useNavigate,
   useSelector,
@@ -12,36 +13,36 @@ import {
   FavoriteIcon,
   RestoreIcon,
   LocationOnIcon,
-  GitHubIcon,
-  LinkedInIcon,
-  TwitterIcon,
-  LightbulbIcon,
-  GavelIcon,
-  PolicyIcon,
-  StarsIcon,
-  AccountTreeIcon,
-  LayersIcon,
-  ThumbUpIcon,
-  CommentIcon,
-  HomeIcon,
+  // GitHubIcon,
+  // LinkedInIcon,
+  // TwitterIcon,
+  // LightbulbIcon,
+  // GavelIcon,
+  // PolicyIcon,
+  // StarsIcon,
+  // AccountTreeIcon,
+  // LayersIcon,
+  // ThumbUpIcon,
+  // CommentIcon,
+  // HomeIcon,
   useDispatch,
   PropTypes,
 } from "../../../utils/commons";
 
-const Icons = [
-  <GitHubIcon sx={{ color: "white" }} />,
-  <LinkedInIcon sx={{ color: "white" }} />,
-  <TwitterIcon sx={{ color: "white" }} />,
-  <LayersIcon sx={{ color: "white" }} />,
-  <StarsIcon sx={{ color: "white" }} />,
-  <PolicyIcon sx={{ color: "white" }} />,
-  <GavelIcon sx={{ color: "white" }} />,
-  <LightbulbIcon sx={{ color: "white" }} />,
-  <CommentIcon sx={{ color: "white" }} />,
-  <ThumbUpIcon sx={{ color: "white" }} />,
-  <AccountTreeIcon sx={{ color: "white" }} />,
-  <HomeIcon sx={{ color: "white" }} />,
-];
+// const Icons = [
+//   <GitHubIcon sx={{ color: "white" }} />,
+//   <LinkedInIcon sx={{ color: "white" }} />,
+//   <TwitterIcon sx={{ color: "white" }} />,
+//   <LayersIcon sx={{ color: "white" }} />,
+//   <StarsIcon sx={{ color: "white" }} />,
+//   <PolicyIcon sx={{ color: "white" }} />,
+//   <GavelIcon sx={{ color: "white" }} />,
+//   <LightbulbIcon sx={{ color: "white" }} />,
+//   <CommentIcon sx={{ color: "white" }} />,
+//   <ThumbUpIcon sx={{ color: "white" }} />,
+//   <AccountTreeIcon sx={{ color: "white" }} />,
+//   <HomeIcon sx={{ color: "white" }} />,
+// ];
 
 const FooterItemsComponent = (props) => {
   const { name, index } = props;
@@ -58,7 +59,7 @@ const FooterItemsComponent = (props) => {
         variant={"text"}
         fullWidth
       >
-        {Icons[index]}
+        {BottomBarIcons[{ key: index }]}
         <Typography
           sx={{
             margin: "0.5rem 1rem",

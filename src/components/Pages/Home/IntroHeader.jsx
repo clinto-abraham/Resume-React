@@ -1,12 +1,10 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import Polygon from "../../components/Polygon";
+import { useEffect, useState } from "../../../utils/commons";
 
 export default function IntroHeader() {
   const [name, setName] = useState("header-90");
 
   const handleScroll = () => {
-    console.log(window.scrollY, "window.scrollY", name);
+    // console.log(window.scrollY, "window.scrollY", name);
     if (window.scrollY > 50 || document.documentElement.scrollTop > 50) {
       // document.getElementById("header").style.fontSize = "30px";
       setName("header-30");
@@ -50,9 +48,12 @@ export default function IntroHeader() {
               <span className="heading-primary--sub">dive into pure codes</span>
             </h1>
 
-            <Link to="/section-tours" className="btn btn--white btn--animated">
-              Discover our tours
-            </Link>
+            <button
+              onClick={handleScroll}
+              className="btn btn--white btn--animated"
+            >
+              Dive in
+            </button>
           </div>
         </div>
       </header>

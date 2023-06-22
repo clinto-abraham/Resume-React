@@ -1,5 +1,8 @@
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Modal from "./index";
+import { SideBarIcons } from "../../../utils/Icons";
+import { useDispatch, useSelector, useNavigate } from "../../../utils/commons";
+import { registerSideNavbarToggle } from "../../../redux/navbarSlice";
 
 const links = [
   {
@@ -11,60 +14,61 @@ const links = [
     name: "About",
   },
   {
-    route: "/service",
-    name: "Services",
-  },
-  {
-    route: "/testimony",
-    name: "Testimony",
+    route: "/blogs",
+    name: "Blogs",
   },
   {
     route: "/connect",
-    name: "Connect with me!",
+    name: "Contact",
   },
   {
-    route: "/coming-soon",
-    name: "Coming Soon",
+    route: "/dashboard",
+    name: "Dashboard",
   },
   {
     route: "/projects",
-    name: "Projects",
+    name: "Explore Projects",
   },
   {
-    route: "/img/2",
-    name: "Image 2",
+    route: "/login",
+    name: "Login",
   },
 ];
 
 export default function SideModal() {
+  const { sideNavbarOpen } = useSelector((state) => state.navbar);
+  const dispatch = useDispatch();
   let navigate = useNavigate();
+  const handleNavbar = (link) => {
+    console.log(link, "link");
+    navigate(link);
+
+    dispatch(registerSideNavbarToggle(!sideNavbarOpen));
+  };
   // let buttonRef = React.useRef(null);
   function onDismiss() {
     navigate(-1);
   }
+  // if (!sideNavbarOpen) {
+  //   // navigate("/navigate");
+  // } else {
+  //   // navigate("/");
+  // }
 
   return (
     <section>
-      <Modal
-        modalName="smallModal"
-        modalTitle="Small Modal"
-        toggleModal={onDismiss}
-        modalOpen={true}
-
-        // aria-labelledby="label"
-        // initialFocusRef={buttonRef}
-        // style={{
-        //   backgroundColor: "transparent",
-        // }}
-      >
+      <Modal toggleModal={onDismiss} modalOpen={sideNavbarOpen}>
         <section>
           <ul className="navigation__list">
             {links.map((data, index) => (
-              <li key={data.route + index} className="navigation__item">
-                <Link to={data.route} className="navigation__link">
-                  <span>{index + 1}</span> {data.name}
-                </Link>
-              </li>
+              <NavLink key={data.route + index} className="navigation__item">
+                <div
+                  onClick={() => handleNavbar(data.route)}
+                  className="navigation__link"
+                >
+                  <span>{SideBarIcons[index]}</span> {data.name}
+                </div>
+              </NavLink>
             ))}
           </ul>
         </section>
@@ -75,7 +79,9 @@ export default function SideModal() {
 
 // import { Link } from "react-router-dom";
 // import { Dialog } from "@reach/dialog";
-//
+// {/* <Link to={data.route} className="navigation__link"> */}
+
+// {/* </Link> */}
 
 // const links = [
 //   {

@@ -1,4 +1,3 @@
-// import ExtraGrid from "../../components/Home/ExtraGrid";
 import ServiceConnect from "../../components/Pages/Home/ServiceConnect";
 import ServiceTestimony from "../../components/Pages/Home/ServiceTestimony";
 import ServiceSubscriptions from "../../components/Pages/Home/ServiceSubscriptions";
@@ -8,10 +7,13 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { routerTOC } from "../../utils/helpers/router.helper";
 import { useNavigate } from "react-router-dom";
+import SideBar from "../../components/Layout/Navbar/SideBar";
+// import IntroHeader from "../../components/Pages/Home/IntroHeader";
 // import ZoomCard from "../../components/Fragments/ZoomCard";
 // import FlipCard from "../../components/Fragments/FlipCard";
 // import IconsTOC from "../../components/Fragments/IconsTOC";
 // import GranularGrid from "../../components/Fragments/GranularGrid";
+// import ExtraGrid from "../../components/Home/ExtraGrid";
 
 const Home = () => {
   const location = useLocation();
@@ -22,6 +24,7 @@ const Home = () => {
 
   return (
     <main>
+      <SideBar />
       {/* <ZoomCard />
 
       <FlipCard className="vertical" />

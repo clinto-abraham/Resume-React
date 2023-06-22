@@ -1,5 +1,4 @@
-import { registerModalToggle } from "../../redux/subscribeSlice";
-import "../../styles/App.css";
+import { registerModalToggle } from "../../../../redux/subscribeSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 function EmailSubscription() {
