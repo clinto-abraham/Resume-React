@@ -1,0 +1,56 @@
+.parallax {
+  /* The image used */
+  background-image: url("https://public-personal-data.s3.ap-south-1.amazonaws.com/progamming+files/nat-4.jpg");
+  /* Full height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .caption {
+    opacity: 0.5;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .border {
+      background-color: #383535;
+      color: #fff;
+      position: absolute;
+      top: 160%;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    }
+    .without-border {
+      font-size: 25px;
+      padding: 18px;
+      color: #f5ebeb;
+      position: absolute;
+      top: 260%;
+      text-align: center;
+    }
+  }
+
+  .info {
+    h3 {
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font: 20px "Lato", sans-serif;
+      color: #111;
+    }
+    p {
+      letter-spacing: 1px;
+      font: 10px "sans", sans-serif;
+      color: #252323;
+    }
+    color: #777;
+    background-color: white;
+    opacity: 0.9;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+  }
+}

@@ -1,3 +1,4 @@
+clinto-portfolio-copy
 # Logs
 logs
 *.log
@@ -22,3 +23,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+clinto-portfolio
+.env
+clinto-curriculum-vitae
+a-transferOld
