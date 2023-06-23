@@ -1,6 +1,6 @@
-import { useRouteError, useNavigate } from "react-router-dom";
+import { useRouteError, useNavigate } from "../utils/commons";
 
-export default function RouterErrorPage() {
+export default function RouterBoundary() {
   const error = useRouteError();
   let navigate = useNavigate();
   return (

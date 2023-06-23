@@ -1,22 +1,31 @@
 import { createBrowserRouter } from "../utils/commons";
 
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Blogs from "../pages/Blogs";
-import Contact from "../pages/Contact";
-import Dashboard from "../pages/Dashboard";
-import Login from "../pages/Login";
+import Home from "../Pages/Home";
+import About from "../Pages/About";
+import Blogs from "../Pages/Blogs";
+import Contact from "../Pages/Contact";
+import Dashboard from "../Pages/Dashboard";
+import Login from "../Pages/Login";
 // import NotFound from "../pages/NotFound";
-import Projects from "../pages/Projects";
+import Projects from "../Pages/Projects";
+import RouterBoundary from "../error/RouterBoundary";
+import ErrorBoundary from "../error/ErrorBoundary";
+import RootBoundary from "../error/RootBoundary";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <ErrorBoundary name="<Home />">
+        <Home />,
+      </ErrorBoundary>
+    ),
+    errorElement: <RootBoundary />,
     children: [
       {
         path: "about",
         element: <About />,
+        errorElement: <RouterBoundary />,
         children: [
           {
             path: "projects",

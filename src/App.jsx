@@ -4,31 +4,21 @@ import router from "./router";
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
 import AuthProvider from "./context/AuthProvider";
-// import { SnackbarProvider } from 'notistack';
-
-import Hero from "./components/Layout/Hero";
-import IntroHeader from "./components/Pages/Home/IntroHeader";
-
-import FooterNavbar from "./components/Layout/Navbar/BottomBar";
-import IconBar from "./components/Layout/Navbar/IconBar";
-import UserRatings from "./components/Fragments/UserRatings";
-import TimeLine from "./components/Pages/Profile/TimeLine";
+import { SnackbarProvider } from "notistack";
+import Layout from "./Layout";
 
 export default function App() {
   // const { darkMode } = useSelector((state) => state.navbar);
   return (
     <>
       <Provider store={store}>
-        <Hero />
-        <IntroHeader />
-        <IconBar />
         <AuthProvider>
-          {/* <SnackbarProvider maxSnack={3}> */}
-          <RouterProvider router={router} />;
+          <SnackbarProvider maxSnack={3}>
+            <Layout>
+              <RouterProvider router={router} />
+            </Layout>
+          </SnackbarProvider>
         </AuthProvider>
-        <UserRatings />
-        <TimeLine />
-        <FooterNavbar />
       </Provider>
     </>
   );
